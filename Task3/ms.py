@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 app = Flask(__name__)
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY_3")
 
 #Function to get the chosen weather
 def get_weather(city):

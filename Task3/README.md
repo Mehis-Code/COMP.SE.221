@@ -1,4 +1,4 @@
-Python Microservice that fetches weather. Made for a small course assignment.
+Python Microservice that fetches weather. Made for a small course assignment.<br />
 Uses https://www.weatherapi.com/ API for weather providing
 
 REQUIRES:<br />
