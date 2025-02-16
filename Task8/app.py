@@ -1,16 +1,16 @@
-# Environment needs to pip install jsonify, Flask, requests, python-dotenv
+#Environment needs to pip install jsonify, Flask, requests, python-dotenv
 from flask import Flask, jsonify
 from functions import getData
 import random
 
 app = Flask(__name__)
 
-# Default route
+#Default route
 @app.route('/')
 def index():
     return jsonify({"message": "use: /year to get the data"})
 
-# Data route
+#Data route
 @app.route('/<year>', methods=['GET'])
 def getItems(year):
     fetchMoviesMade = getData("movies", year).get("total_results")

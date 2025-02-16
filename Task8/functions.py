@@ -1,14 +1,15 @@
-# Functions to get data
+#Functions to get data
 from dotenv import load_dotenv
 import os
 import requests
 
-# Load environment variables from .env file
+#Load environment variables from .env file
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY_A")
 API_KEY2 = os.getenv("API_KEY_B")
 
+#Depending on input, get data from different APIs, MovieDB or Api-Ninjas
 def getData(api_type, year):
     if api_type == "movies":
         url = f"https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&page=1&primary_release_year={year}&sort_by=popularity.desc"
